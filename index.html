@@ -43,6 +43,7 @@
   <body> 
 	  <div id="outerbox">
 
+	<div id="contactInformation">
 	<!--begin contact info and photo-->
 	<img class="imgright" src="./myphoto.jpeg" width= 144 px height= 192 px>
 	<h1>Nairen Cao</h1>
@@ -54,6 +55,8 @@
 		
 	<br>
 	e-mail: nc645 [at] georgetown [dot] edu<br><br>
+
+</div>
 	<!--end contact info and photo-->
 
 <div>
@@ -63,9 +66,6 @@
       <li><a href="#education">Education and Working Experience</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#teaching">Teaching experience(TA)</a></li>
-
-
-      
       
    </ul>
    </div>
@@ -74,8 +74,7 @@
 <div id = "singlebox">
 	<!--begin personal info / bio-->
 <a name="aboutme"> </a>	<h1> About Me </h1> 
-I am a PhD student at Deptartment of Computer Science, Georgetown University. My interest lies on algorithms and cryptography. 
-My supervisor is <a href="http://people.cs.georgetown.edu/~ophir/">Ophir Frieder</a>.
+I am a PhD student at Deptartment of Computer Science, Georgetown University. My interest lies on graph algorithms and cryptography. My previous supervisor was <a href="http://people.cs.georgetown.edu/~adam/">Adam O'neil</a> and currently I am supervised by <a href="http://people.cs.georgetown.edu/~ophir/">Ophir Frieder</a>.
 
  </div>
 
@@ -107,15 +106,14 @@ My supervisor is <a href="http://people.cs.georgetown.edu/~ophir/">Ophir Frieder
 		<span class="papertitle"><a href="#" onclick ="return toggle('vanishingerror');">Efficient Construction of Directed Hopsets and Parallel Approximate Shortest Paths
         </a></span><br>
 		Nairen Cao, 
-		<a href="http://people.cs.georgetown.edu/~jfineman/"> Jeremy T. Fineman </a> , 
+		<a href="http://people.cs.georgetown.edu/~jfineman/"> Jeremy T. Fineman</a>, 
 		Katina Russell
-		<comment>Manuscript</comment>
 		<div id="vanishingerror" class="abstract" style="display: none;">
 		<comment>Links:</comment> <!--A HREF="https://eccc.weizmann.ac.il/report/2019/121/"-->[arxiv]</A>
 		
 		<br><br>
 		<comment>Abstract:</comment>
-The approximate single-source shortest-path problem is as follows:  given a graph with non-negative edge weights and a designated source vertexs, return estimates of the distances fromsto each other vertex such that the estimate falls between the true distance and (1 + \epsilon) times thedistance.  This paper provides the first  nearly work-efficient parallel algorithm with sublinearspan (also called depth) for the approximate shortest-path problem ondirectedgraphs.  Specifi-cally, for constant \epsilon and polynomially-bounded edge weights, our algorithm has work ̃O(m) andspann1/2+o(1).  Several algorithms were previously known for the case ofundirectedgraphs, butnone of the techniques seem to translate to the directed setting.The  main  technical  contribution  is  the  first  nearly  linear-work  algorithm  for  constructinghopsets on directed graphs.  A (β,\epsilon)-hopset is a set of weighted edges (sometimes called short-cuts) which, when added to the graph, admitβ-hop paths with weight no more than (1+\epsilon) timesthe true shortest-path distances.  There is a simple sequential algorithm that takes as input adirected graph and produces a linear-cardinality hopset withβ=O(√n), but its running timeis  quite  high—specifically ̃O(m√n).   Our  algorithm  is  the  first  more  efficient  algorithm  thatproduces a directed hopset with similar characteristics.  Specifically,  our sequential algorithmruns  in ̃O(m)  time  and  constructs  a  hopset  with ̃O(n)  edges  and β=n1/2+o(1).   A  parallelversion of the algorithm has work ̃O(m) and spann1/2+o(1).
+		The approximate single-source shortest-path problem is as follows:  given a graph with non-negative edge weights and a designated source vertexs, return estimates of the distances fromsto each other vertex such that the estimate falls between the true distance and (1 + \epsilon) times thedistance.  This paper provides the first  nearly work-efficient parallel algorithm with sublinearspan (also called depth) for the approximate shortest-path problem ondirectedgraphs. Specifi-cally, for constant \epsilon and polynomially-bounded edge weights, our algorithm has work ̃O(m) and span 1/2+o(1).  Several algorithms were previously known for the case ofundirectedgraphs, butnone of the techniques seem to translate to the directed setting.The  main  technical  contribution  is  the  first  nearly  linear-work  algorithm  for  constructinghopsets on directed graphs. A (\beta,\epsilon)-hopset is a set of weighted edges (sometimes called short-cuts) which, when added to the graph, admitβ-hop paths with weight no more than (1+\epsilon) timesthe true shortest-path distances.  There is a simple sequential algorithm that takes as input adirected graph and produces a linear-cardinality hopset with \beta=O(\sqrt(n)), but its running timeis  quite  high—specifically ̃O(m\sqrt(n)).   Our  algorithm  is  the  first  more  efficient  algorithm  thatproduces a directed hopset with similar characteristics.  Specifically, our sequential algorithmruns  in ̃O(m) time  and  constructs a hopset  with ̃O(n)  edges  and \beta = 1/2+o(1).A  parallelversion of the algorithm has work ̃O(m) and span 1/2+o(1).
 		
 		</ul></td></tr>
 
@@ -125,7 +123,7 @@ The approximate single-source shortest-path problem is as follows:  given a grap
 			<li> 
 	<span class="papertitle"><a href="#" onclick ="return toggle('topologicalsort');">I/O-Efficient algorithms for topological sort and related problems</a></span><br>
 		Nairen Cao, 
-		<a href="http://people.cs.georgetown.edu/~jfineman/"> Jeremy T. Fineman </a> , 
+		<a href="http://people.cs.georgetown.edu/~jfineman/"> Jeremy T. Fineman</a>, 
 		Katina Russell,
 		<a href="http://eugene-yang.github.io/"> Eugene Yang </a>
 		<br>
@@ -145,7 +143,6 @@ The approximate single-source shortest-path problem is as follows:  given a grap
 			<li> 
 	<span class="papertitle"><a href="#" onclick ="return toggle('rsaoaep');">Toward RSA-OAEP without Random Oracles.</a></span><br>
 		Nairen Cao, <a href="http://people.cs.georgetown.edu/~adam/">Adam O'Neill</a> and Mohammad Zaheri
-		, 
 		<br>
 		<comment>arxiv</comment>
 		<div id="rsaoaep" class="abstract" style="display: none;">
@@ -166,8 +163,8 @@ The approximate single-source shortest-path problem is as follows:  given a grap
 
 	<li> 
 	<span class="papertitle"><a href="#" onclick ="return toggle('LRCRYPT');">LRCRYPT: Leakage-Resilient Cryptographic System (Design and Implementation).</a></span><br>
-		Xiaoqi Yu, Nairen Cao, Jun Zhang and
-		<a href="https://www.cs.hku.hk/people/academic-staff/smyiu">Siu-Ming Yiu</a>, 
+		Xiaoqi Yu, Nairen Cao, Jun Zhang, 
+		<a href="https://www.cs.hku.hk/people/academic-staff/smyiu">Siu-Ming Yiu</a>
 		<br>
 		<comment>WISA 2016</comment>
 		<div id="LRCRYPT" class="abstract" style="display: none;">
@@ -179,8 +176,8 @@ The approximate single-source shortest-path problem is as follows:  given a grap
 		
 	<li> 
 	<span class="papertitle"><a href="#" onclick ="return toggle('dynamicProof');">Dynamic Proofs of Retrievability with improved worst case overhead.</a></span><br>
-		Xiaoqi Yu, Nairen Cao, Jun Zhang and
-		<a href="https://www.cs.hku.hk/people/academic-staff/smyiu">Siu-Ming Yiu</a>, 
+		Xiaoqi Yu, Nairen Cao, Jun Zhang, 
+		<a href="https://www.cs.hku.hk/people/academic-staff/smyiu">Siu-Ming Yiu</a>
 		<br>
 		<comment>CNS2016</comment>
 		<div id="dynamicProof" class="abstract" style="display: none;">
