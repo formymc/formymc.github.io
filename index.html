@@ -98,9 +98,7 @@ Jeremy T. Fineman</a>.
 	<a name="publications"></a><h1>Research Papers</h1>
 		
 	<table>
-	
-		<!--
-		<tr><td valign="top" align="center" width=30px><span>2020</span></td>
+				<tr><td valign="top" align="center" width=30px><span>2020</span></td>
 	<td><ul class="publist">
 	
 	
@@ -109,45 +107,48 @@ Jeremy T. Fineman</a>.
 		<span class="papertitle"><a href="#" onclick ="return toggle('vanishingerror');">Efficient Construction of Directed Hopsets and Parallel Approximate Shortest Paths
         </a></span><br>
 		Nairen Cao, 
-		<a href="http://people.cs.georgetown.edu/~jfineman/"> Jeremy T. Fineman</a>, 
-		Katina Russell
+		<a href="http://people.cs.georgetown.edu/~jfineman/"> Jeremy T. Fineman</a>, <a href="https://katinarussell.github.io/"> Katina Russell</a>
+		<br>
+		<comment>STOC 2020</comment>
 		<div id="vanishingerror" class="abstract" style="display: none;">
-		<comment>Links:</comment> <!--A HREF="https://eccc.weizmann.ac.il/report/2019/121/"--><!--[arxiv]</A>
+		<comment>Links:</comment> <A HREF="https://arxiv.org/pdf/1912.05506.pdf"-->[arxiv]</A>
 		
 		<br><br>
 		<comment>Abstract:</comment>
 		The approximate single-source shortest-path problem is as follows:  given a graph with non-negative edge weights and a designated source vertexs, return estimates of the distances fromsto each other vertex such that the estimate falls between the true distance and (1 + \epsilon) times thedistance.  This paper provides the first  nearly work-efficient parallel algorithm with sublinearspan (also called depth) for the approximate shortest-path problem ondirectedgraphs. Specifi-cally, for constant \epsilon and polynomially-bounded edge weights, our algorithm has work ̃O(m) and span 1/2+o(1).  Several algorithms were previously known for the case ofundirectedgraphs, butnone of the techniques seem to translate to the directed setting.The  main  technical  contribution  is  the  first  nearly  linear-work  algorithm  for  constructinghopsets on directed graphs. A (\beta,\epsilon)-hopset is a set of weighted edges (sometimes called short-cuts) which, when added to the graph, admitβ-hop paths with weight no more than (1+\epsilon) timesthe true shortest-path distances.  There is a simple sequential algorithm that takes as input adirected graph and produces a linear-cardinality hopset with \beta=O(\sqrt(n)), but its running timeis  quite  high—specifically ̃O(m\sqrt(n)).   Our  algorithm  is  the  first  more  efficient  algorithm  thatproduces a directed hopset with similar characteristics.  Specifically, our sequential algorithmruns  in ̃O(m) time  and  constructs a hopset  with ̃O(n)  edges  and \beta = 1/2+o(1).A  parallelversion of the algorithm has work ̃O(m) and span 1/2+o(1).
 
-		</ul></td></tr> -->
+		</ul></td></tr>
 
-	<tr><td valign="top" align="center" width=30px><span>2019</span></td>
-	<td><ul class="publist">	
+		<tr><td valign="top" align="center" width=30px><span></span></td>
+	<td><ul class="publist">
+	
+	
+		<li>
 		
-			<li> 
-	<span class="papertitle"><a href="#" onclick ="return toggle('topologicalsort');">I/O-Efficient algorithms for topological sort and related problems</a></span><br>
+		<span class="papertitle"><a href="#" onclick ="return toggle('improvedworkspan');">Improved Work Span Tradeoff for Single Source Reachability and Approximate Shortest Paths
+        </a></span><br>
 		Nairen Cao, 
-		<a href="http://people.cs.georgetown.edu/~jfineman/"> Jeremy T. Fineman</a>, 
-		Katina Russell,
-		<a href="http://eugene-yang.github.io/"> Eugene Yang </a>
+		<a href="http://people.cs.georgetown.edu/~jfineman/"> Jeremy T. Fineman</a>, <a href="https://katinarussell.github.io/"> Katina Russell</a>
 		<br>
-		<comment>SODA2019</comment>
-		<div id="topologicalsort" class="abstract" style="display: none;">
-		<comment>Links:</comment> <A HREF="https://locus.siam.org/doi/pdf/10.1137/1.9781611975482.124">[IEEE]</A>
+		<comment>SPAA 2020</comment>
+		<div id="improvedworkspan" class="abstract" style="display: none;">
+		<comment>Links:</comment> <A HREF="https://dl.acm.org/doi/pdf/10.1145/3350755.3400222?casa_token=AAxf1DgCNfIAAAAA:Q6JiWmQZxtL6KrtzlAxFbPYXUTpGAur7rMATTSvRPYgdFOB2upc42f2KZKuDRnoZAdfgMoeUQhOmlQ"-->[ACM]</A>
 		
-			<br><br>
+		<br><br>
 		<comment>Abstract:</comment>
-		This paper presents I/O-efficient algorithms for topologically sorting a directed acyclic graph and for the more general problem identifying and topologically sorting the strongly connected components of a directed graph G = (V, E). Both algorithms are randomized and have I/O-costs O(sort(E) · poly(log V )), with high probability, where sort(E) = O(E/B logM/B(E/B)) is the I/O cost of sorting an |E|-element array on a machine with sizeB blocks and size-M cache/internal memory. These are the first algorithms for these problems that do not incur at least one I/O per vertex, and as such these are the first I/O-efficient algorithms for sparse graphs. By applying the technique of time-forward processing, these algorithms also imply I/O-efficient algorithms for most problems on directed acyclic graphs, such as shortest paths, as well as the single-source reachability problem on arbitrary directed graphs.
-    </ul></td></tr>
+		This brief announcement presents parallel algorithms with a tradeoff between work and span for single source reachability and approximate shortest paths on directed graphs. Both algorithms have ˜O(mρ^2 +nρ^4) work and achieve n^{1/2+o(1)}/ρ span for all ρ ∈ [1,√n].
+
+		</ul></td></tr>
 
 
-	<tr><td valign="top" align="center" width=30px><span>2018</span></td>
+	<tr><td valign="top" align="center" width=30px><span></span></td>
 	<td><ul class="publist">	
 		
 			<li> 
 	<span class="papertitle"><a href="#" onclick ="return toggle('rsaoaep');">Toward RSA-OAEP without Random Oracles.</a></span><br>
-		Nairen Cao, <a href="http://people.cs.georgetown.edu/~adam/">Adam O'Neill</a> and Mohammad Zaheri
+		Nairen Cao, <a href="http://people.cs.georgetown.edu/~adam/">Adam O'Neill</a> and <a href="https://www.linkedin.com/in/mzaheri">Mohammad Zaheri</a>
 		<br>
-		<comment>arxiv</comment>
+		<comment>Public Key Cryptography (PKC) 2020: 279-308 </comment>
 		<div id="rsaoaep" class="abstract" style="display: none;">
 		<comment>Links:</comment> <A HREF="https://eprint.iacr.org/2018/1170.pdf">[arxiv]</A>
 		
@@ -159,6 +160,25 @@ Jeremy T. Fineman</a>.
 		• Both oracles can be instantiated simultaneously for two variants of RSA-OAEP, called “t-clear” and “sclear” RSA-OAEP. For this we use extractability-style assumptions in the sense of Canetti and Dakdouk(TCC 2010) on the round functions, as well as novel yet plausible “XOR-type” assumptions on RSA. While admittedly strong, such assumptions may nevertheless be necessary at this point to make positive progress.
 		In particular, our full instantiations evade impossibility results of Shoup (J. Cryptology 2002), Kiltz and Pietrzak (EUROCRYPT 2009), and Bitansky et al. (STOC 2014). Moreover, our results for s-clear RSAOAEP yield the most efficient RSA-based encryption scheme proven IND-CCA2 in the standard model (using bold assumptions on cryptographic hashing) to date.
 
+    </ul></td></tr>
+
+    <tr><td valign="top" align="center" width=30px><span>2019</span></td>
+	<td><ul class="publist">	
+		
+			<li> 
+	<span class="papertitle"><a href="#" onclick ="return toggle('topologicalsort');">I/O-Efficient algorithms for topological sort and related problems</a></span><br>
+		Nairen Cao, 
+		<a href="http://people.cs.georgetown.edu/~jfineman/"> Jeremy T. Fineman</a>, 
+		<a href="https://katinarussell.github.io/"> Katina Russell</a>,
+		<a href="http://eugene-yang.github.io/"> Eugene Yang </a>
+		<br>
+		<comment>SODA2019</comment>
+		<div id="topologicalsort" class="abstract" style="display: none;">
+		<comment>Links:</comment> <A HREF="https://locus.siam.org/doi/pdf/10.1137/1.9781611975482.124">[IEEE]</A>
+		
+			<br><br>
+		<comment>Abstract:</comment>
+		This paper presents I/O-efficient algorithms for topologically sorting a directed acyclic graph and for the more general problem identifying and topologically sorting the strongly connected components of a directed graph G = (V, E). Both algorithms are randomized and have I/O-costs O(sort(E) · poly(log V )), with high probability, where sort(E) = O(E/B logM/B(E/B)) is the I/O cost of sorting an |E|-element array on a machine with sizeB blocks and size-M cache/internal memory. These are the first algorithms for these problems that do not incur at least one I/O per vertex, and as such these are the first I/O-efficient algorithms for sparse graphs. By applying the technique of time-forward processing, these algorithms also imply I/O-efficient algorithms for most problems on directed acyclic graphs, such as shortest paths, as well as the single-source reachability problem on arbitrary directed graphs.
     </ul></td></tr>
 	
 	<tr><td valign="top" align="center" width=30px><span>2016</span></td>
@@ -203,6 +223,8 @@ Jeremy T. Fineman</a>.
 
 <a name="teaching"></a>	<h1> Teaching experience(TA)</h1>
 <UL>
+<LI> <!--a href="**.html"-->COSC 540 -- Algorithms</a> (Fall 2020, Dr. Jeremy T. Fineman) </LI>
+<LI> <!--a href="**.html"-->COSC 280 -- Intro to Database</a> (Spring 2020, Dr. Ophir Frieder) </LI>
 <LI> <!--a href="**.html"-->COSC 580 -- Database Management Systems</a> (Fall 2019, Dr. Ophir Frieder) </LI>
 </UL> 
 	<!--end teaching-->
